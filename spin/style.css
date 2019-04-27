@@ -1,9 +1,9 @@
 body {
-    background-color: #ffffff;
+    background-color:  #e0e0eb;
 	margin: 0;
 }
 h1 {
-	color: purple;
+	color: #662277;
 }
 .container {
 	width: 900px;
@@ -25,7 +25,6 @@ audio {
 	float: right;
 }
 .media {
-	padding-bottom: 50px;
 	width: 900px;
 	margin: auto;
 }
@@ -35,5 +34,8 @@ iframe {
 #spotify {
 	margin: auto;
 	padding-left: 30px;
+	padding-bottom: 50px;
 }
-
+#scipt {
+	width: 900px;
+}
