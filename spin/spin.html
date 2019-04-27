@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 	<head>
-		
 		<title>trash boys</title>
 		<link rel="stylesheet" href="style.css" type="text/css" />
 		<link rel="shortcut icon" href="/images/favicon.ico" />
@@ -12,6 +11,7 @@
 				<h1> This shit is dannk //  Sam and Jay dot cahng</h1>
 				<h2>whats up mpothger fucker we got thid fucking spionning ball i cant type on this keytboard lool
 				</h2>
+				<p>supahorganism - npr</p>
 			</header>
 		</div> <!-- END OF CONTAINER -->
 		
@@ -19,55 +19,57 @@
 				<audio controls="controls">
         				<source src="audio/superorganism.mp3" type = "audio/mpeg">        		
    		 		</audio>
-		</div>
-		<div class = "container">
-			<div class = "half_container">
-				<iframe width = "500" height = "500" src="https://www.youtube.com/embed/-5yh2HcIlkU" 					frameborder="0"allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-						in-picture"allowfullscreen>
-				</iframe>
+   		</div>
+		<div class = "media">
+			<div class = "half_container_left">
+				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-5yh2HcIlkU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class = "half_containe_right">
+				<iframe id = "spotify" src="https://open.spotify.com/embed/playlist/4DBTdNwWReYyOv6DosYf3S" width="300" height="380" frameborder="0" data-mce-fragment="1"></iframe>
 			</div>
 		</div>
 		<div class = "container">
-				<script 				src="https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.min.js"></script>
-				<script>
-
-					var camera, scene, renderer;
-					var geometry, material, mesh;
-
-					function init() {
-
-						camera = new THREE.PerspectiveCamera( 75, window.innerWidth / 									window.innerHeight,0.1,10 );
-						camera.position.z = 2;
-			
-
-						scene = new THREE.Scene();
-						scene.background = new THREE.Color( 0x992211 );
-
-						geometry = new THREE.SphereGeometry( 1 );
-						material = new THREE.MeshBasicMaterial( { color: 8, wireframe: true 							} );
-
-						mesh = new THREE.Mesh( geometry, material );
-						scene.add( mesh );
-
-						renderer = new THREE.WebGLRenderer( { antialias: true } );
-						renderer.setSize( window.innerWidth, window.innerHeight );
-						document.body.appendChild( renderer.domElement );				
+					<script 				src="https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.min.js"></script>
+					<script>
+	
+						var camera, scene, renderer;
+						var geometry, material, mesh;
+	
+						function init() {
+	
+							camera = new THREE.PerspectiveCamera( 75, window.innerWidth / 									window.innerHeight,0.1,10 );
+							camera.position.z = 2;
 				
-						}
-
-						function animate( time ) {
-
-						mesh.rotation.x = time * 0.0002;
-						mesh.rotation.y = time * 0.001;
-
-						renderer.render( scene, camera );
-						requestAnimationFrame( animate );
-
-						}
-
-						init();
-						requestAnimationFrame( animate );
-
-				</script>
+	
+							scene = new THREE.Scene();
+							scene.background = new THREE.Color( 0x992211 );
+	
+							geometry = new THREE.SphereGeometry( 1 );
+							material = new THREE.MeshBasicMaterial( { color: 8, wireframe: true 							} );
+	
+							mesh = new THREE.Mesh( geometry, material );
+							scene.add( mesh );
+	
+							renderer = new THREE.WebGLRenderer( { antialias: true } );
+							renderer.setSize( window.innerWidth, window.innerHeight );
+							document.body.appendChild( renderer.domElement );				
+					
+							}
+	
+							function animate( time ) {
+	
+							mesh.rotation.x = time * 0.0002;
+							mesh.rotation.y = time * 0.001;
+	
+							renderer.render( scene, camera );
+							requestAnimationFrame( animate );
+	
+							}
+	
+							init();
+							requestAnimationFrame( animate );
+	
+					</script>
 		</div>
 
 	</body>

@@ -1,24 +1,39 @@
 body {
     background-color: #ffffff;
 	margin: 0;
-		overflow: hidden;
 }
 h1 {
 	color: purple;
 }
-iframe {
-		margin-left: 
-}
 .container {
-	width: 100%
+	width: 900px;
+	margin: auto;
 }
 .half_container {
 	width: 50%;
-	float: left;
 }
 audio {	
 	margin: 0 auto;
+	padding-bottom: 50px;
 }
-.half_container iframe {
+.half_container_left iframe {
 	margin: 0 auto;
+	float: left;
 }
+.half_container_right iframe {
+	margin: 0 auto;
+	float: right;
+}
+.media {
+	padding-bottom: 50px;
+	width: 900px;
+	margin: auto;
+}
+iframe {
+	margin: auto;
+}
+#spotify {
+	margin: auto;
+	padding-left: 30px;
+}
+
