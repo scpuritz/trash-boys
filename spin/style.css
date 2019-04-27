@@ -9,12 +9,9 @@ h1 {
 	width: 900px;
 	margin: auto;
 }
-.half_container {
-	width: 50%;
-}
 audio {	
-	margin: 0 auto;
 	padding-bottom: 50px;
+	float: left;
 }
 .half_container_left iframe {
 	margin: 0 auto;
@@ -38,4 +35,20 @@ iframe {
 }
 #scipt {
 	width: 900px;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color:  #e0e0eb;  
+  }
+}
+audio {
+	width: 300px;
+}
+img {
+	float: right;
+}
+#audio_skull {
+	width: 900px;
+	height: 400px;
+	margin: auto;
 }
